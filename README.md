@@ -49,6 +49,8 @@ Changes to be committed:
 
 Create a remote repo `tun-tun` on Github - https://github.com/new
 
+Add a remote
+
 ```
 ➜  git remote add origin git@github.com:akshayaSalunke/tun-tun.git
 ```
@@ -107,6 +109,8 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 ## References
 
 https://help.github.com/en/github/getting-started-with-github/create-a-repo
+
+https://help.github.com/en/github/using-git/managing-remote-repositories
 
 https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
 
