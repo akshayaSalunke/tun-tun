@@ -59,14 +59,28 @@ origin	git@github.com:akshayaSalunke/tun-tun.git (fetch)
 origin	git@github.com:akshayaSalunke/tun-tun.git (push)
 ```
 
+Start the ssh-agent in the background.
+
 ```
 ➜  eval "$(ssh-agent -s)"
 Agent pid 5742
 ```
 
+Add your SSH private key to the ssh-agent and store your passphrase in the keychain. 
+
 ```
 ➜  ssh-add -K ~/.ssh/id_rsa
 ```
+
+Copy the SSH key to your clipboard.
+
+```
+➜  pbcopy < ~/.ssh/id_rsa.pub
+```
+
+Add New SSH key - https://github.com/settings/keys
+
+Test your SSH connection
 
 ```
 ➜  ssh -T git@github.com
@@ -75,10 +89,6 @@ RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'github.com,192.30.255.113' (RSA) to the list of known hosts.
 Hi akshayaSalunke! You've successfully authenticated, but GitHub does not provide shell access.
-```
-
-```
-➜  pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 ```
